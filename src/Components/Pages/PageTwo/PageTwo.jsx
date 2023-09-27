@@ -1,10 +1,11 @@
-import './PageOne.scss';
+import './PageTwo.scss';
 import { ReactComponent as EllipseLight } from '../assets/ellipse-light.svg';
 import { ReactComponent as EllipseDark } from '../assets/ellipse-dark.svg';
 import { useState } from 'react';
+import { PageThree } from '../PageThree/PageThree';
 
 
-export const PageOne = () => {
+export const PageTwo = () => {
 
     const [value, setValue] = useState(1);
 
@@ -20,50 +21,38 @@ export const PageOne = () => {
 
             <div className='quize-container'>
                 <div className='quize-ellipse'>
+                    <EllipseLight />
                     <EllipseDark />
                     <EllipseLight />
-                    <EllipseLight />
                 </div>
-                <p className='quize-comment'>Вопрос 1 из 3</p>
+                <p className='quize-comment'>Вопрос 2 из 3</p>
 
                 <div className='quize-input'>
-                    <h3 className='quize-input__head'>Сколько вам лет?</h3>
+                    <h3 className='quize-input__head'>Какой у вас тип кожи?</h3>
                     <form className='quize-input__list'>
                         <label>
                             <input type="radio" name="radio" value="1"
                                 checked={value == '1' ? true : false}
                                 onChange={changeValue} />
-                            <span>Нужны средства для ребёнка младше 10 лет</span>
+                            <span>Сухая</span>
                         </label>
 
                         <label>
                             <input type="radio" name="radio" value="2"
                                 checked={value == '2' ? true : false}
                                 onChange={changeValue} />
-                            <span>Мне меньше 25 лет</span>
+                            <span>Нормальная</span>
                         </label>
 
                         <label >
                             <input type="radio" name="radio" value="3"
                                 checked={value == '3' ? true : false}
                                 onChange={changeValue} />
-                            <span>От 25 до 35 лет</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="radio" value="4"
-                                checked={value == '4' ? true : false}
-                                onChange={changeValue} />
-                            <span>От 35 до 45 лет</span>
-                        </label>
-
-                        <label>
-                            <input type="radio" name="radio" value="5"
-                                checked={value == '5' ? true : false}
-                                onChange={changeValue} />
-                            <span>Мне больше 45 лет</span>
+                            <span>Комбинированная</span>
                         </label>
                         <div>
-                            <button className='button-blue'>Дальше</button>
+                            <button className='button-blue'
+                            >Дальше</button>
                         </div>
 
                     </form>
