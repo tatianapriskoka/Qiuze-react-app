@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 export const PageThree = () => {
 
-    const [value, setValue] = useState(1);
+    const [value, setValue] = useState(0);
 
     function changeValue(event) {
         setValue(event.target.value);
@@ -49,8 +49,9 @@ export const PageThree = () => {
                                 onChange={changeValue} />
                             <span>Иногда</span>
                         </label>
-                        <div>
-                            <button className='button-blue'>Дальше</button>
+                        <div className='quize-input-btns'>
+                            <button className='button-white'>Назад</button>
+                            <button className='button-blue'>Узнать результат</button>
                         </div>
 
                     </form>

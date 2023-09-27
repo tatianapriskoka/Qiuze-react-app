@@ -7,7 +7,7 @@ import { PageThree } from '../PageThree/PageThree';
 
 export const PageTwo = () => {
 
-    const [value, setValue] = useState(1);
+    const [value, setValue] = useState(0);
 
     function changeValue(event) {
         setValue(event.target.value);
@@ -50,7 +50,8 @@ export const PageTwo = () => {
                                 onChange={changeValue} />
                             <span>Комбинированная</span>
                         </label>
-                        <div>
+                        <div className='quize-input-btns'>
+                            <button className='button-white'>Назад</button>
                             <button className='button-blue'
                             >Дальше</button>
                         </div>

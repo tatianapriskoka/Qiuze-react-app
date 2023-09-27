@@ -1,130 +1,41 @@
 @import '../../styles.scss';
 
-.container {
-    padding: 50px;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-
-}
-
-
-.content__head {
-    color: #000;
-    font-family: Inter;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-
-.content__description {
-    max-width: 583px;
-    color: #000;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
 
 
 
-.quize-container {
-    max-width: 868px;
-    height: 432px;
-    border-radius: 10px;
-    background: #DDF3FF;
-}
-
-.quize-ellipse {
-    display: flex;
-    padding: 34px 0px 16px 35px;
-    gap: 7px;
-}
-
-.quize-comment {
-    color: #9A9A9A;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding-left: 35px;
-    padding-bottom: 38px;
-    margin: 0;
-}
-
-.quize-input__head {
-    color: #000;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    padding-left: 35px;
-    padding-bottom: 33px;
-    margin: 0;
-}
-
-.quize-input__list {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    display: flex;
+.quize-input-btns {
+    display: inline;
     gap: 10px;
-    padding-bottom: 18px;
-    color: #000;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    margin-top: 19px;
+    margin-bottom: 65px;
 }
 
-.button-blue {
-    border-radius: 5px;
-    background: #00A5FF;
+.button-white {
     display: inline-flex;
     padding: 10px 15px;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    color: #FFF;
+    border-radius: 5px;
+    background: #FFF;
+    height: 31px;
+    color: #000;
     text-align: center;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-right: 10px;
     border-style: none;
-    margin-top: 19px;
-    margin-bottom: 65px;
 }
 
-.quize-input__list {
-    padding-left: 35px;
-}
-
-@media(max-width:768px) {
-    .content__head {
-        font-size: 18px;
+@media(max-width:500px) {
+    .button-white {
+        width: 163px;
     }
 
-    .content__description {
-        font-size: 15px;
-    }
-
-    .quize-input__head {
-        font-size: 15px;
-    }
-
-    label {
-        font-size: 14px;
+    .button-blue {
+        width: 163px;
     }
 }
