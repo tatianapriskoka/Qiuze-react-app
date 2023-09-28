@@ -1,6 +1,5 @@
-
-
 import React, { useEffect, useState } from "react";
+import { ReactComponent as LikeButton } from '../assets/like-empty.svg';
 import './ProductsList.scss';
 
 export const ProductsList = () => {
@@ -30,22 +29,26 @@ export const ProductsList = () => {
             <section className="wrapper">
                 {data.map((item) => {
                     return (
-                        <div className='card-list-container '
+                        <section className='card-list__container '
                             key={item.id}>
                             <div >
-                                <img
-                                    src={item.image}
-                                    width='100' height='150' alt={item.title} />
+                                <div>
+                                    <img
+                                        src={item.image}
+                                        width='100' height='150' alt={item.title} />
+                                    <LikeButton
+                                        height={24} width={24} opacity={0.5} /></div>
+
                             </div>
-                            <div >
+                            <div className='card-list__title'>
                                 {item.title}
                             </div>
-                            <div>{item.oldPrice}</div>
+                            <div>{item.oldPrice && item.oldPrice}</div>
                             <div>
                                 {item.price} руб.
                             </div>
 
-                        </div>
+                        </section>
                     )
                 })}
             </section>

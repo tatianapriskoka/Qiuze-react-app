@@ -90,10 +90,9 @@ label {
 .button-blue {
     border-radius: 5px;
     background: #00A5FF;
-    display: inline-flex;
+
     padding: 10px 15px;
-    justify-content: center;
-    align-items: center;
+
     gap: 10px;
     color: #FFF;
     text-align: center;
@@ -106,6 +105,7 @@ label {
     margin-top: 19px;
     height: 31px;
     text-decoration: none;
+    height: 31px;
 }
 
 .quize-input__list {

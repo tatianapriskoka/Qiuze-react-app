@@ -11,10 +11,9 @@
 }
 
 .button-white {
-    display: inline-flex;
+
     padding: 10px 15px;
-    justify-content: center;
-    align-items: center;
+
     gap: 10px;
     border-radius: 5px;
     background: #FFF;
@@ -29,6 +28,7 @@
     margin-right: 10px;
     border-style: none;
     text-decoration: none;
+    height: 31px;
 }
 
 @media(max-width:500px) {
