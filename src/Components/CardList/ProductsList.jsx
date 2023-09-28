@@ -1,9 +1,9 @@
 
 
 import React, { useEffect, useState } from "react";
-import './CardList.scss';
+import './ProductsList.scss';
 
-const CardList = () => {
+export const ProductsList = () => {
     const [data, setData] = useState([]);
     const getData = () => {
         fetch('products.json')
@@ -53,4 +53,3 @@ const CardList = () => {
     )
 }
 
-export default CardList;

@@ -2,6 +2,7 @@ import './PageOne.scss';
 import { ReactComponent as EllipseLight } from '../assets/ellipse-light.svg';
 import { ReactComponent as EllipseDark } from '../assets/ellipse-dark.svg';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 export const PageOne = () => {
@@ -64,15 +65,15 @@ export const PageOne = () => {
                         </label>
 
                         <div className='quize-input-btns'>
-                            <button className='button-blue'>Дальше</button>
+                            <Link to='/pageTwo' className='button-blue'>Дальше</Link>
                         </div>
 
                     </form>
 
                 </div>
-            </div>
+            </div >
 
-        </div>
+        </div >
     )
 }
 

@@ -3,6 +3,7 @@ import { ReactComponent as EllipseLight } from '../assets/ellipse-light.svg';
 import { ReactComponent as EllipseDark } from '../assets/ellipse-dark.svg';
 import { useState } from 'react';
 import { PageThree } from '../PageThree/PageThree';
+import { Link } from 'react-router-dom';
 
 
 export const PageTwo = () => {
@@ -51,9 +52,8 @@ export const PageTwo = () => {
                             <span>Комбинированная</span>
                         </label>
                         <div className='quize-input-btns'>
-                            <button className='button-white'>Назад</button>
-                            <button className='button-blue'
-                            >Дальше</button>
+                            <Link to='/' className='button-white'>Назад</Link>
+                            <Link to='/pageThree' className='button-blue'>Дальше</Link>
                         </div>
 
                     </form>
