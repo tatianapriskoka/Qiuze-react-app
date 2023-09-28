@@ -32,21 +32,17 @@ export const ProductsList = () => {
                         <section className='card-list__container '
                             key={item.id}>
                             <div >
-                                <div>
-                                    <img
-                                        src={item.image}
-                                        width='100' height='150' alt={item.title} />
-                                    <LikeButton
-                                        height={24} width={24} opacity={0.5} /></div>
-
+                                <img
+                                    src={item.image}
+                                    width='100' height='150' alt={item.title} />
+                                <LikeButton
+                                    height={24} width={24} opacity={0.5} />
                             </div>
+
                             <div className='card-list__title'>
                                 {item.title}
                             </div>
-                            <div>{item.oldPrice && item.oldPrice}</div>
-                            <div>
-                                {item.price} руб.
-                            </div>
+                            <div className='card-list__price'> <span className="oldPrice">{item.oldPrice}</span> <span className="newPrice">{item.price} руб.</span></div>
 
                         </section>
                     )

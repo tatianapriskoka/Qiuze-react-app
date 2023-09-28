@@ -31,8 +31,6 @@
     line-height: normal;
 }
 
-
-
 .quize-container {
     max-width: 868px;
     height: calc(100vh - 20%);
@@ -44,6 +42,8 @@
     display: flex;
     padding: 34px 0px 16px 35px;
     gap: 7px;
+    width: 80px;
+    height: 20px;
 }
 
 .quize-comment {
@@ -90,10 +90,7 @@ label {
 .button-blue {
     border-radius: 5px;
     background: #00A5FF;
-
     padding: 10px 15px;
-
-    gap: 10px;
     color: #FFF;
     text-align: center;
     font-family: Inter;

@@ -32,34 +32,29 @@ export const PageOne = () => {
                     <form className='quize-input__list'>
                         <label>
                             <input type="radio" name="radio" value="1"
-
                                 onChange={changeValue} />
                             <span>Нужны средства для ребёнка младше 10 лет</span>
                         </label>
 
                         <label>
                             <input type="radio" name="radio" value="2"
-
                                 onChange={changeValue} />
                             <span>Мне меньше 25 лет</span>
                         </label>
 
                         <label >
                             <input type="radio" name="radio" value="3"
-
                                 onChange={changeValue} />
                             <span>От 25 до 35 лет</span>
                         </label>
                         <label>
                             <input type="radio" name="radio" value="4"
-
                                 onChange={changeValue} />
                             <span>От 35 до 45 лет</span>
                         </label>
 
                         <label>
                             <input type="radio" name="radio" value="5"
-
                                 onChange={changeValue} />
                             <span>Мне больше 45 лет</span>
                         </label>

@@ -12,6 +12,7 @@ export const PageThree = () => {
     function changeValue(event) {
         setValue(event.target.value);
     }
+
     return (
         <div className="container">
             <div className='content'>
@@ -32,21 +33,18 @@ export const PageThree = () => {
                     <form className='quize-input__list'>
                         <label>
                             <input type="radio" name="radio" value="1"
-
                                 onChange={changeValue} />
                             <span>Да</span>
                         </label>
 
                         <label>
                             <input type="radio" name="radio" value="2"
-
                                 onChange={changeValue} />
                             <span>Нет</span>
                         </label>
 
                         <label >
                             <input type="radio" name="radio" value="3"
-
                                 onChange={changeValue} />
                             <span>Иногда</span>
                         </label>

@@ -18,7 +18,52 @@
 }
 
 div>svg {
-    padding-bottom: 55%;
+    padding-bottom: 60%;
+}
+
+.card-list__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.card-list__price {
+    display: flex;
+    gap: 3px;
+}
+
+.card-list__title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.oldPrice {
+    color: #B8B8B8;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 136.9%;
+    text-decoration: line-through;
+}
+
+.newPrice {
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 136.9%;
 }
 
 @media(max-width:768px) {
