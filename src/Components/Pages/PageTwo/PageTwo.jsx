@@ -48,7 +48,7 @@ export const PageTwo = () => {
                         <div className='quize-input-btns'>
                             <Link to='/' className='button-white'>Назад</Link>
                             {value ? <Link to='/pageThree' className='button-blue'>Дальше</Link>
-                                : <Link to='/pageTwo' className='button-blue'>Дальше</Link>}
+                                : <Link to='/pageTwo' className='button-blue-not'>Дальше</Link>}
                         </div>
 
                     </form>

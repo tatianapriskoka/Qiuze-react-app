@@ -52,7 +52,7 @@ export const PageThree = () => {
                             <Link to='/pageTwo' className='button-white'>Назад</Link>
                             {value ?
                                 <Link to='/pageProducts' className='button-blue'>Узнать результат</Link>
-                                : <Link to='/pageThree' className='button-blue'>Узнать результат</Link>}
+                                : <Link to='/pageThree' className='button-blue-not'>Узнать результат</Link>}
                         </div>
 
                     </form>

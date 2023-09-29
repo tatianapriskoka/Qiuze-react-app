@@ -60,7 +60,7 @@ export const PageOne = () => {
                         </label>
 
                         <div className='quize-input-btns'>
-                            {value ? <Link to='/pageTwo' className='button-blue'>Дальше</Link> : <Link to='/' className='button-blue'>Дальше</Link>}
+                            {value ? <Link to='/pageTwo' className='button-blue'>Дальше</Link> : <Link to='/' className='button-blue-not'>Дальше</Link>}
                         </div>
 
                     </form>
