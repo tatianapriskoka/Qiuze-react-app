@@ -3,7 +3,7 @@ import './App.css';
 import { PageOne } from './Components/Pages/PageOne/PageOne';
 import { PageThree } from './Components/Pages/PageThree/PageThree';
 import { PageTwo } from './Components/Pages/PageTwo/PageTwo';
-import { ProductsList } from './Components/CardList/ProductsList';
+import { ProductsList } from './Components/ProductsList/ProductsList';
 
 
 export const App = () => {
